@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title> CancerUX</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+
+  <!-- Favicons -->
+  <link href="static/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="static/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="static/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="static/vendor/aos/aos.css" rel="stylesheet">
+  <link href="static/vendor/fontawesome-free/css/all.min.css" rel="stylesheet">
+  <link href="static/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="static/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+
+
+  <!-- Main CSS File -->
+  <link href="static/css/main.css" rel="stylesheet">
+
+</head>
+
+<body class="index-page">
+
+  <header id="header" class="header sticky-top">
+
+    <div class="topbar d-flex align-items-center">
+      <div class="container d-flex justify-content-center justify-content-md-between">
+        <div class="d-none d-md-flex align-items-center">
+          <i class="bi bi-clock me-1"></i> Monday - Sunday, 24h
+        </div>
+        <div class="d-flex align-items-center">
+        </div>
+      </div>
+    </div><!-- End Top Bar -->
+
+    <div class="branding d-flex align-items-center">
+
+      <div class="container position-relative d-flex align-items-center justify-content-end">
+        <a href="index.html" class="logo d-flex align-items-center me-auto">
+          <img src="static/img/logo.png" alt="">
+  
+        </a>
+
+        <nav id="navmenu" class="navmenu">
+          <ul>
+            <li><a href="#hero" class="active">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#featured-services">Services</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+          <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
+        </nav>
+
+ <a class="cta-btn" href="#" onclick="toggleChatbot()">Ask Your Assistant </a>
+
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero section">
+
+      <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <div class="carousel-item active">
+          <img src="static/img/hero-carousel/hero-carousel-1.jpg" alt="">
+          <div class="container">
+            <h2>Welcome to CancerUX </h2>
+            <p> Your Cancer treatement Assistant</p>
+            <a href="#about" class="btn-get-started">Read More</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <img src="static/img/hero-carousel/hero-carousel-2.jpg" alt="">
+          <div class="container">
+           <h2>Welcome to CancerUX
+</h2>
+            <p> Your Cancer treatement Assistant</p>
+            <a href="#about" class="btn-get-started">Read More</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <div class="carousel-item">
+          <img src="static/img/hero-carousel/hero-carousel-3.jpg" alt="">
+          <div class="container">
+            <h2>Welcome to CancerUX
+</h2>
+            <p> Your Cancer treatement Assistant</p>
+            <a href="#about" class="btn-get-started">Read More</a>
+          </div>
+        </div><!-- End Carousel Item -->
+
+        <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+
+        <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+        <ol class="carousel-indicators"></ol>
+
+      </div>
+
+    </section><!-- /Hero Section -->
+
+    <!-- Featured Services Section -->
+    <section id="featured-services" class="featured-services section">
+
+      <div class="container">
+
+        <div class="row gy-4">
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="fas fa-heartbeat icon"></i></div>
+              <h4><a href="" class="stretched-link">Personalized Patient Support</a></h4>
+              <p> 24/7 chatbot assistance to answer questions about treatments, side effects, and daily care tips.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="fas fa-pills icon"></i></div>
+              <h4><a href="" class="stretched-link">Smart Medical Query Assistant</a></h4>
+              <p>Ask complex questions in natural language and receive AI-driven, context-aware responses backed by medical literature.</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="fas fa-thermometer icon"></i></div>
+              <h4><a href="" class="stretched-link">Evidence-Based Therapy Insights</a></h4>
+              <p>Access reliable, up-to-date information on cancer therapies, protocols, and clinical guidelines from trusted sources</p>
+            </div>
+          </div><!-- End Service Item -->
+
+          <div class="col-xl-3 col-md-6 d-flex" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item position-relative">
+              <div class="icon"><i class="fas fa-dna icon"></i></div>
+              <h4><a href="" class="stretched-link">Nemo Enim</a></h4>
+              <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis</p>
+            </div>
+          </div><!-- End Service Item -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /Featured Services Section -->
+
+    
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About Us<br></h2>
+      </div><!-- End Section Title -->
+
+      <div class="container">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 position-relative align-self-start" data-aos="fade-up" data-aos-delay="100">
+            <img src="static/img/about.jpg" class="img-fluid" alt="">
+            <a href="https://www.youtube.com/watch?v=Y7f98aduVJ8" class="glightbox pulsating-play-btn"></a>
+          </div>
+          <div class="col-lg-6 content" data-aos="fade-up" data-aos-delay="200">
+            <h3>Your Cancer Treatement Assistant</h3>
+            <p class="fst-italic">
+             CancerUX is an intelligent medical assistant designed to support cancer patients and healthcare providers by delivering accurate, understandable answers to complex medical questions. Built with cutting-edge Natural Language Processing (NLP) and fine-tuned on domain-specific data using BioBERT, our chatbot offers personalized responses based on trusted cancer-related knowledge sources. Our mission is to enhance patient experience, reduce confusion during treatment, and assist clinicians in accessing key information quickly and efficiently all through a user-friendly conversational interface.
+            </p>
+            <ul>
+              <li><i class="bi bi-check2-all"></i> <span>AI-powered medical Q&A trained on cancer-specific data using BioBERT</span></li>
+              <li><i class="bi bi-check2-all"></i> <span>Personalized support for patients and assistance for healthcare providers</span></li>
+            </ul>
+           
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    
+
+  
+
+<div id="chatbot-wrapper" class="chatbot-hidden">
+    <div class="sidebar">
+       <div class="sidebar-content">
+            <p>Welcome to our AI-powered CancerUX assistant. Feel free to ask any Cancer-related questions or describe your symptoms.</p>
+        </div>
+        <div class="health-tips">
+            <h3>Quick Health Tips</h3>
+            <ul>
+                <li>Stay hydrated</li>
+                <li>Get enough sleep</li>
+                <li>Exercise regularly</li>
+                <li>Eat a balanced diet</li>
+            </ul>
+        </div>
+    </div>
+    <div class="chat-container">
+        <div class="chat-header">
+            Chat with CancerUX Bot
+        </div>
+        <div class="chat-messages" id="chatMessages">
+            <div class="message bot-message">
+                Hello! I'm your Cancer treatement assistant. How can I help you today?
+            </div>
+        </div>
+        <div class="chat-input">
+            <input type="text" id="userInput" placeholder="Type your message here...">
+            <button id="sendButton">Send</button>
+        </div>
+    </div>
+    </div>
+<script>
+    document.getElementById("sendButton").addEventListener("click", function() {
+        const userInput = document.getElementById("userInput").value;
+
+        fetch('/get_response', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({ message: userInput })
+        })
+        .then(response => response.json())
+        .then(data => {
+            const chatMessages = document.getElementById("chatMessages");
+            
+            // Affiche le message de l'utilisateur
+            chatMessages.innerHTML += `<div class="message user-message">${userInput}</div>`;
+            // Affiche la réponse du bot
+            chatMessages.innerHTML += `<div class="message bot-message">${data.response}</div>`;
+
+            // Efface le champ input
+            document.getElementById("userInput").value = '';
+        });
+    });
+</script>
+
+    <script>
+        $(document).ready(function() {
+            let sessionId = Date.now().toString();
+    
+            function addMessage(message, isUser) {
+                const messageDiv = $('<div>').addClass('message').text(message);
+                if (isUser) {
+                    messageDiv.addClass('user-message');
+                } else {
+                    messageDiv.addClass('bot-message');
+                }
+                $('#chatMessages').append(messageDiv);
+                $('#chatMessages').scrollTop($('#chatMessages')[0].scrollHeight);
+            }
+    
+            function sendMessage(message) {
+                $.ajax({
+                    url: '/chatbot',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({ message: message, session_id: sessionId }),
+                    success: function(response) {
+                        addMessage(response.response, false);
+    
+                        if (response.response.includes("Are you currently at Ganpat University campus?")) {
+                            addMessage("If yes, would you like to book an appointment at the Guni Health Clinic? (Yes/No)", false);
+                        }
+                    },
+                    error: function(xhr, status, error) {
+                        addMessage("Error: " + error, false);
+                    }
+                });
+            }
+    
+            function bookAppointment(time) {
+                $.ajax({
+                    url: '/book_appointment',
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify({ 
+                        session_id: sessionId,
+                        preferred_time: time
+                    }),
+                    success: function(response) {
+                        addMessage(response.response, false);
+                        if (response.response.includes("Would you like to book this slot?")) {
+                            addMessage("Please respond with 'Yes' to confirm the suggested slot, or provide another time.", false);
+                        }
+                    },
+                    error: function(xhr, status, error) {
+                        addMessage("Error booking appointment: " + error, false);
+                    }
+                });
+            }
+    
+            // Initial message
+            addMessage("Hello! I'm your healthcare assistant. What should I call you?", false);
+    
+            $('#sendButton').click(function() {
+                const userInput = $('#userInput').val().trim();
+                if (userInput === '') return;
+    
+                addMessage(userInput, true);
+                $('#userInput').val('');
+    
+                if (userInput.toLowerCase() === 'yes' && $('#chatMessages').text().includes("would you like to book an appointment")) {
+                    addMessage("Great! Please provide a preferred time for your appointment (HH:MM):", false);
+                } else if (userInput.match(/^\d{2}:\d{2}$/)) {
+                    bookAppointment(userInput);
+                } else {
+                    sendMessage(userInput);
+                }
+            });
+    
+            $('#userInput').keypress(function(e) {
+                if (e.which == 13) {
+                    $('#sendButton').click();
+                }
+            });
+        });
+    </script>
+
+    
+
+    
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="gallery section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Gallery</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="swiper init-swiper">
+          <script type="application/json" class="swiper-config">
+            {
+              "loop": true,
+              "speed": 600,
+              "autoplay": {
+                "delay": 5000
+              },
+              "slidesPerView": "auto",
+              "centeredSlides": true,
+              "pagination": {
+                "el": ".swiper-pagination",
+                "type": "bullets",
+                "clickable": true
+              },
+              "breakpoints": {
+                "320": {
+                  "slidesPerView": 1,
+                  "spaceBetween": 0
+                },
+                "768": {
+                  "slidesPerView": 3,
+                  "spaceBetween": 20
+                },
+                "1200": {
+                  "slidesPerView": 5,
+                  "spaceBetween": 20
+                }
+              }
+            }
+          </script>
+          <div class="swiper-wrapper align-items-center">
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="static/img/gallery/gallery-1.jpg"><img src="static/img/gallery/gallery-1.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="static/img/gallery/gallery-2.jpg"><img src="static/img/gallery/gallery-2.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="static/img/gallery/gallery-3.jpg"><img src="static/img/gallery/gallery-3.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="static/img/gallery/gallery-4.jpg"><img src="static/img/gallery/gallery-4.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="static/img/gallery/gallery-5.jpg"><img src="static/img/gallery/gallery-5.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="static/img/gallery/gallery-6.jpg"><img src="static/img/gallery/gallery-6.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="static/img/gallery/gallery-7.jpg"><img src="static/img/gallery/gallery-7.jpg" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a class="glightbox" data-gallery="images-gallery" href="static/img/gallery/gallery-8.jpg"><img src="static/img/gallery/gallery-8.jpg" class="img-fluid" alt=""></a></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+
+    </section><!-- /Gallery Section 
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Contact</h2>
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+          <div class="col-lg-6 ">
+            <div class="row gy-4">
+
+              <div class="col-lg-12">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="200">
+                  <i class="bi bi-geo-alt"></i>
+                  <h3>Address</h3>
+                  <p>A108 Adam Street, New York, NY 535022</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="col-md-6">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="300">
+                  <i class="bi bi-telephone"></i>
+                  <h3>Call Us</h3>
+                  <p>+1 5589 55488 55</p>
+                </div>
+              </div><!-- End Info Item -->
+
+              <div class="col-md-6">
+                <div class="info-item d-flex flex-column justify-content-center align-items-center" data-aos="fade-up" data-aos-delay="400">
+                  <i class="bi bi-envelope"></i>
+                  <h3>Email Us</h3>
+                  <p>info@example.com</p>
+                </div>
+              </div><!-- End Info Item -->
+
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+
+    </section><!-- /Contact Section -->
+
+  </main>
+
+  <footer id="footer" class="footer light-background">
+
+   
+    <div class="container copyright text-center mt-4">
+      <p>© <span>Copyright</span> <strong class="px-1 sitename">CancerUX</strong> <span>All Rights Reserved 2025</span></p>
+     
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+
+  <!-- Vendor JS Files -->
+  <script src="static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="static/vendor/php-email-form/validate.js"></script>
+  <script src="static/vendor/aos/aos.js"></script>
+  <script src="static/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="static/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="static/vendor/swiper/swiper-bundle.min.js"></script>
+  <script>
+   function toggleChatbot() {
+      const chatbot = document.getElementById("chatbot-wrapper");
+      if (chatbot.classList.contains("chatbot-hidden")) {
+          chatbot.classList.remove("chatbot-hidden");
+          chatbot.classList.add("chatbot-visible");
+      } else {
+          chatbot.classList.remove("chatbot-visible");
+          chatbot.classList.add("chatbot-hidden");
+      }
+}
+
+</script>
+
+
+  <!-- Main JS File -->
+  <script src="static/js/main.js"></script>
+
+</body>
+
+</html>
