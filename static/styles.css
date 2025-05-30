@@ -1,0 +1,152 @@
+/* État caché (par défaut) */
+.chatbot-hidden {
+  display: none;
+}
+
+/* État visible */
+.chatbot-visible {
+  display: flex; /* déplace ici le display */
+  flex-direction: column;
+}
+
+/* Conteneur du chatbot */
+#chatbot-wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  width: 350px;
+  max-height: 85vh;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+  z-index: 9999;
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  overflow-y: scroll;
+}
+
+
+/* Sidebar dans le chatbot */
+#chatbot-wrapper .sidebar {
+  background-color: #ffffff;
+  padding: 1rem;
+  border-bottom: 1px solid #ccc;
+  max-height: 600px;
+  overflow-y: auto;
+}
+
+#chatbot-wrapper .sidebar h2 {
+  font-size: 1rem;
+  color: #0cbfd5;
+  margin-bottom: 0.5rem;
+}
+
+#chatbot-wrapper .sidebar-content {
+  font-size: 0.9rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+#chatbot-wrapper .health-tips {
+  background-color: #e6f3ff;
+  padding: 0.75rem;
+  border-radius: 8px;
+}
+
+#chatbot-wrapper .health-tips h3 {
+  color: #0cbfd5;
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+#chatbot-wrapper .health-tips ul {
+  list-style-type: disc;
+  padding-left: 1rem;
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+#chatbot-wrapper .health-tips ul li {
+  margin-bottom: 0.25rem;
+}
+
+/* Chat principal */
+#chatbot-wrapper .chat-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  background-color: #e6f3ff;
+}
+
+/* Header du chat */
+.chat-header {
+  background-color: #0cbfd5;
+  color: white;
+  padding: 0.6rem;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+
+/* Messages */
+.chat-messages {
+  flex-grow: 1;
+  padding: 0.75rem;
+  overflow-y: auto;
+  background-color: #f9f9f9;
+}
+
+.message {
+  margin-bottom: 0.6rem;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
+  max-width: 80%;
+  font-size: 0.9rem;
+  word-wrap: break-word;
+  line-height: 1.4;
+}
+
+.user-message {
+  background-color: #0cbfd5;
+  color: white;
+  align-self: flex-end;
+}
+
+.bot-message {
+  background-color: white;
+  color: #333;
+  border: 1px solid #ddd;
+  align-self: flex-start;
+}
+
+/* Saisie utilisateur */
+.chat-input {
+  display: flex;
+  padding: 0.75rem;
+  background-color: white;
+  border-top: 1px solid #ccc;
+}
+
+.chat-input input {
+  flex: 1;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.chat-input button {
+  margin-left: 0.5rem;
+  padding: 0.4rem 0.9rem;
+  background-color: #0cbfd5;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.chat-input button:hover {
+  background-color: #2980b9;
+}
